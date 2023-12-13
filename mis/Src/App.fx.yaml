@@ -1,0 +1,15 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(ProductsCol, Products);
+        ClearCollect(AssetsCol, Assets);
+        ClearCollect(CategoriesCol, Categories)
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
